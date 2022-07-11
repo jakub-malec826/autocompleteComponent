@@ -1,0 +1,72 @@
+$gray: rgb(141, 141, 141);
+
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.Widget {
+    width: max-content;
+    max-width: 100%;
+    height: max-content;
+    margin: 25vh auto;
+    padding: 0;
+    border: 0.1em solid gray;
+    display: flex;
+    flex-direction: column;
+
+    .Widget__Top {
+        display: inline-flex;
+        padding: 0.1em;
+        padding-left: 2em;
+        margin: 0 auto;
+        border-bottom: 0.1em solid $gray;
+    }
+    .Widget__Bottom {
+        margin: 0 0.1em;
+    }
+}
+
+.ListOfChosenItems {
+    display: inline-flex-table;
+    width: fit-content;
+    list-style: none;
+    padding: 0;
+
+    .ListOfChosenItems__Element {
+        display: inline-flex;
+        width: min-content;
+        background-color: $gray;
+        padding: 0.1em;
+        margin: 0 0.05em;
+        border-radius: 0.3em;
+    }
+    .ListOfChosenItems__Element-button {
+        background-color: $gray;
+        border: none;
+    }
+}
+
+.Form {
+    margin: 1em;
+    margin-left: 0;
+    flex-basis: 60%;
+    .Form__Input {
+        width: 100%;
+    }
+}
+
+.ListToChooseFrom {
+    margin-left: 0;
+    list-style: none;
+    padding: 0;
+    .ListToChooseFrom__Element {
+        margin: 0.1em 0;
+    }
+    .ListToChooseFrom__Element-active {
+        background-color: gray;
+        padding-left: 0.3em;
+        border-radius: 0.3em;
+    }
+}
